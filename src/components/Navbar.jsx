@@ -1,11 +1,19 @@
 import React from "react";
+import { useState } from "react";
 import "./Navbar.css";
 
 const Navbar = ({ setCategory }) => {
+  
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <nav className="nav">
       <div className="logo">iNews</div>
-      <ul className="nav-ul">
+      <div className={`nav-ul ${isOpen ? "active" : ""}`}>
         <li>
           <button onClick={() => setCategory("general")}>Home</button>
         </li>
@@ -27,7 +35,10 @@ const Navbar = ({ setCategory }) => {
         <li>
           <button onClick={() => setCategory("entertainment")}>Entertainment</button>
         </li>
-      </ul>
+      </div>
+      <button className="hamburger" onClick={toggleMenu}>
+        &#9776;
+      </button>
     </nav>
   );
 };

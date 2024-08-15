@@ -10,7 +10,10 @@ function App() {
   return (
     <>
      <Navbar setCategory={setCategory}></Navbar>
+     <div className="content">
+      
      <Newsboard category={category}></Newsboard>
+     </div>
     </>
   )
 }
