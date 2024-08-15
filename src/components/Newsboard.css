@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+.parent{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* margin: 0 10px 10px 10px; */
+    /* gap: 10px; */
+    margin-left: 50px;
+}
+.underline{
+    text-decoration: underline;
+    margin-bottom: 20px;
+    color: black;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-style: bold;
+    font-size: 40px;
+    padding: 15px;
+}
+.black{
+    background-color: #f3d9dc !important;
+}

@@ -1,0 +1,40 @@
+.cards {
+  /* width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: white; */
+  box-sizing: border-box;
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+}
+.cards:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+.cards:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+.cards-content h6 {
+  font-size: 26px;
+}
+.cards-content a {
+  text-decoration: none;
+}
+.cards-content p {
+  font-size: 18px;
+  font-style: italic;
+}
