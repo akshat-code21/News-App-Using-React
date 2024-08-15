@@ -7,6 +7,9 @@ const Navbar = ({ setCategory }) => {
       <div className="logo">iNews</div>
       <ul className="nav-ul">
         <li>
+          <button onClick={() => setCategory("general")}>Home</button>
+        </li>
+        <li>
           <button onClick={() => setCategory("technology")}>Technology</button>
         </li>
         <li>

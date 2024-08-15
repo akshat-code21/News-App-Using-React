@@ -7,7 +7,7 @@ const Newsitem = ({ title, description, url }) => {
       <div className="cards">
         <div className="cards-content">
           <h6>
-            {title.slice(0,title.indexOf('-'))}
+            {title.slice(0,title.lastIndexOf('-'))}
           </h6>
           <p>{title.slice(title.lastIndexOf('-'))}</p>
           <a href={url} target="_blank">

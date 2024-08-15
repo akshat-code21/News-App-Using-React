@@ -7,6 +7,7 @@
     justify-content: space-between;
     padding: 10px;
     background-color: yellowgreen   ;
+    align-items: baseline;
 }
 .nav-ul{
     list-style: none;

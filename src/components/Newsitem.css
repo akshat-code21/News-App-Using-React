@@ -16,7 +16,7 @@
   transition: all 0.5s;
   display: flex;
   /* align-items: center; */
-  justify-content: center;
+  /* justify-content: center; */
   user-select: none;
   font-weight: bolder;
   color: black;
